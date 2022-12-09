@@ -10,7 +10,7 @@ import { getAllBooks, getBooksByAuthor, getBooksByTitle, getBooksByDate, addBook
  // ROUTES
 
 
- router.get("/", async(req, res)=>{
+ router.get("/search", async(req, res)=>{
     const author = req.query.author
     const title = req.query.title
     const dates = req.query.date
